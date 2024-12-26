@@ -34,18 +34,18 @@ The program is modularized for better understanding and serves as a learning res
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/s-v7/Ponteiros_Em_C.git
+cd Ponteiros_Em_C
 ```
 
 ### Compile the Program
 ```bash
-g++ pointers_vectors.cpp -o pointers_vectors
+g++ pointers.cpp -o output
 ```
 
 ### Run the Executable
 ```bash
-./pointers_vectors
+./output
 ```
 
 ## Sample Output
