@@ -24,6 +24,39 @@ The program is modularized for better understanding and serves as a learning res
 
 ### Modular Code
 - **Functions like `initializeArray`, `displayArray`, and `dynamicMemoryExample` separate the logic for easier understanding.**
+---
+## Graph Algorithms – Shortest Path (Dijkstra)
+
+This project now also includes an implementation of the **Dijkstra algorithm** using a matrix of adjacency in C.  
+The goal is to demonstrate how classical graph algorithms are applied to real-world problems such as:
+
+- Logistics and route optimization  
+- Maps and navigation systems  
+- Games pathfinding  
+- Computer networks routing  
+- Urban planning simulations  
+- Basic AI navigation engines  
+
+Each vertex represents a real entity (for example, locations, cities, routers, or game positions), and each edge weight represents a cost such as:
+
+- Distance  
+- Time  
+- Fuel consumption  
+- Monetary cost  
+- Network latency  
+
+### Example of Real-World Mapping
+
+```c
+char *nomes[] = {
+    "Deposito",
+    "Filial Norte",
+    "Filial Sul",
+    "Hub Regional",
+    "Cliente"
+};
+```
+---
 
 ## Requirements
 
@@ -36,16 +69,23 @@ The program is modularized for better understanding and serves as a learning res
 ```bash
 git clone https://github.com/s-v7/Ponteiros_Em_C.git
 cd Ponteiros_Em_C
+
 ```
 
 ### Compile the Program
 ```bash
 g++ pointers.cpp -o output
-```
 
+gcc dijkstra.c -O2 -Wall -o dijkstra_teste
+
+```
+---
 ### Run the Executable
 ```bash
 ./output
+
+./dijkstra_teste Deposito Cliente
+
 ```
 
 ## Sample Output
@@ -55,22 +95,20 @@ g++ pointers.cpp -o output
 Enter a value for position [0]: 5
 Enter a value for position [1]: 10
 Enter a value for position [2]: 15
-...
 ```
-
+---
 ### Displaying Array Addresses and Values
 ```plaintext
 Address: 0x7ffee3a8b8d0 -> Value: 5
 Address: 0x7ffee3a8b8d4 -> Value: 10
 Address: 0x7ffee3a8b8d8 -> Value: 15
-...
 ```
-
+---
 ### Calculating Sum of Array Elements
 ```plaintext
 Sum of array elements: 150
 ```
-
+---
 ### Demonstrating Dynamic Memory Allocation
 ```plaintext
 Enter the size of the dynamic array: 5
@@ -81,9 +119,19 @@ Dynamic Array [3]: 6
 Dynamic Array [4]: 8
 Dynamic memory deallocated.
 ```
-
+---
+### Which produces an output like:
+```bash
+Lowest Deposit Cost for Customer: 5
+Path: Warehouse -> Northern Branch -> Regional Hub -> Customer
+```
+### Output:
+```bash
+Minimum distance from Warehouse to Customer: 5 km
+Route: Warehouse -> Northern Branch -> Regional Hub -> Customer
+```
+---
 ## Contributing
-
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ### Steps to Contribute
@@ -116,5 +164,5 @@ For questions or suggestions, feel free to reach out:
 
 ## Tags
 
-`pointers` `arrays` `C++` `memory-management` `educational`
+`pointers` Low-level memory manipulation (pointers)` `arrays` `C++` `memory-management` `educational`
 
