@@ -4,9 +4,10 @@
  * Part of the Ponteiros_Em_C showcase: pure pointer + bitwise work.
  * Reference: FIPS PUB 180-4 (Secure Hash Standard).
  *
- * Author: Silas Vasconcelos Cruz (s-v7)
+ * Author: Silas Vasconcelos (s-v7)
  * License: MIT
  */
+
 #ifndef SHA256_H
 #define SHA256_H
 
@@ -33,3 +34,4 @@ void sha256_bytes(const uint8_t *data, size_t len, uint8_t digest[SHA256_DIGEST_
 void sha256_hex(const uint8_t *data, size_t len, char out_hex[SHA256_HEX_SIZE]);
 
 #endif /* SHA256_H */
+
