@@ -1,4 +1,29 @@
-dijkstra_teste
+*.o
 *.out
 *.exe
+dijkstra
+dijkstra_teste
+dijkstra_new_demo
+astar
+astar_demo
+astar_municipios
+blockchain_demo
+semiring_path
+wharshall
+markov
+markov_svc
+fiscal_otimizador
+pointers
+
+
+check_acom.txt
+file.txt
+*.tmp
+*~
+
+# ----- dados exportados do banco -----
+# (sao geografia publica do IBGE; versionar como sample data tambem e valido)
+# nos.csv
+# arestas.csv
+# roteiros.csv
 
