@@ -1,0 +1,24 @@
+{
+  "name": "grafos-br-integ",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Narra rotas de astar_br --json Anthropic (TS) e OpenAI (JS). C é o Oráculo; LLM só Resume/Narra.",
+  "scripts": {
+    "resumo:anthropic": "tsx anthropic.ts",
+    "resumo:openai": "tsx openai.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1",
+    "openai": "^6.42.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
+
+
+
