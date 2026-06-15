@@ -1,6 +1,8 @@
 *.o
 *.out
 *.exe
+.env
+.env.example
 dijkstra
 dijkstra_teste
 dijkstra_new_demo
@@ -27,3 +29,9 @@ file.txt
 # arestas.csv
 # roteiros.csv
 
+
+# grafos_municipios_br
+grafos_municipios_br/astar_br
+grafos_municipios_br/tsp_br
+grafos_municipios_br/*_dbg
+grafos_municipios_br/integ/node_modules/
